@@ -6,7 +6,7 @@
 #    By: ldel-val <ldel-val@student.42madrid.com>  |  |           *            #
 #                                                  \  '.___.;       +          #
 #    Created: 2025/03/05 17:51:44 by ldel-val       '._  _.'   .        .      #
-#    Updated: 2025/03/06 19:55:27 by ldel-val          ``                      #
+#    Updated: 2025/03/06 20:07:06 by ldel-val          ``                      #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,19 +15,20 @@ NAME = garbage_control.a
 # Compiler
 CC = cc
 # Compiler flags
-#CFLAGS -Wall -Wextra -Werror -Isrc
+CFLAGS = -Wall -Wextra -Werror -Isrc
 # Archiver
 AR = ar
 # Archiver flags
 ARFLAGS = -rc
+# Remove command
 RM = rm -f
 
 ##########################
 #        SOURCES         #
 ##########################
-SRC =	dump_management/dump_add_node.c\
-		lib_functs/allocation.c\
-		lib_functs/init.c
+SRC =	src/dump_management/dump_add_node.c\
+		src/lib_functs/allocation.c\
+		src/lib_functs/init.c
 
 # Source to object conversion
 OBJ = $(SRC:.c=.o)
@@ -38,10 +39,10 @@ $(NAME): $(OBJ)
 	$(AR) $(ARFLAGS) $(NAME) $(OBJ)
 
 clean:
-	rm -f $(OBJ)
+	$(RM) $(OBJ)
 
 fclean: clean
-	rm -f $(NAME)
+	$(RM) $(NAME)
 
 re: fclean all
 

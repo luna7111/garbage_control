@@ -6,7 +6,7 @@
 /*   By: ldel-val <ldel-val@student.42madrid.com>  |  |           *           */
 /*                                                 \  '.___.;       +         */
 /*   Created: 2025/03/05 17:52:56 by ldel-val       '._  _.'   .        .     */
-/*   Updated: 2025/03/06 18:56:50 by ldel-val          ``                     */
+/*   Updated: 2025/03/06 20:11:43 by ldel-val          ``                     */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,16 +23,16 @@ typedef char t_memtype;
 
 typedef struct s_gcrtl_dump
 {
-	t_memtype		type;
-	void			*ptr;
-	struct s_node	*next
+	t_memtype			type;
+	void				*ptr;
+	struct s_gcrtl_dump	*next;
 
 }	t_gctrl_dump;
 
-typedef struct s_gcrtl
+typedef struct s_gctrl
 {
-	t_gctrl_list	**dump;
-}
+	t_gctrl_dump	**dump;
+}	t_gctrl;
 
 void	dump_add_ptr(t_gctrl_dump **dump, void *ptr, t_memtype type);
 
