@@ -6,7 +6,7 @@
 #    By: ldel-val <ldel-val@student.42madrid.com>  |  |           *            #
 #                                                  \  '.___.;       +          #
 #    Created: 2025/03/05 17:51:44 by ldel-val       '._  _.'   .        .      #
-#    Updated: 2025/03/06 19:51:16 by ldel-val          ``                      #
+#    Updated: 2025/03/06 19:55:27 by ldel-val          ``                      #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,9 @@ RM = rm -f
 ##########################
 #        SOURCES         #
 ##########################
-SRC = 
+SRC =	dump_management/dump_add_node.c\
+		lib_functs/allocation.c\
+		lib_functs/init.c
 
 # Source to object conversion
 OBJ = $(SRC:.c=.o)
