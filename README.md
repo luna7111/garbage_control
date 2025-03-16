@@ -6,7 +6,7 @@ While this code is published under a MIT license, i do not recomend it's use, if
 
 ## Documentation
 
-You can see the full docs [here]().  
+You can see the full docs [here (this link is currently dead)]().  
 
 Garbage control offers a set of functions to allocate, free and otherwise manage memory in a C program while keeping track of every allocated pointer so memory leaks can be easily prevented.
 
