@@ -1,6 +1,6 @@
 # Garbage control 
 
-Garbage control is a lightweight C library to easily manage allocated memory, it is made to be compliant with the [42 Norme](https://github.com/42school/norminette/tree/master "Norminette github repo") with the intention to be used in my [Minishell Project](https://github.com/luna7111/minishell "My minishell github repo").
+Garbage control is a lightweight C library to easily manage allocated memory, it is made to be compliant with the [42 Norme](https://github.com/42school/norminette/tree/master "Norminette github repo") with the intention to be used in my [Minishell Project](https://github.com/luna7111/shrapnel "My minishell github repo").
 
 While this code is published under a MIT license, i do not recomend it's use, if you are a 42 student, writing your own code is the only way to learn how to be a good coder. If you are not, this project isn't exactly optimal due to limitations like the forenamed 42 Norme and forbidden functions.
 
